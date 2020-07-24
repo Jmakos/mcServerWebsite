@@ -1,0 +1,134 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+/*Header item*/
+header {
+    margin-bottom: 30px;
+}
+
+#server-logo {
+    float: left;
+}
+
+.light-brown-orange {
+    background-color: rgb(247, 168, 103);
+}
+
+.menu-item {
+    float: left;
+    color: rgb(116, 63, 27);
+    font-size: 2.5em;
+    margin: auto;
+}
+
+.navigation-links {
+    color: rgb(116, 63, 27);
+    text-transform: uppercase;
+    font-size: 25px;
+    font-weight: bold;
+    margin-right: 5px;
+    margin-left: 40px;
+}
+
+/*Does not work at the momemnt.*/
+a.navigation-links:hover {
+    -moz-box-shadow: 30px,30px, 4px, #ffffff;
+    -webkit-box-shadow: 30px,30px, 4px, #ffffff;
+    box-shadow: 30px,30px, 4px, #ffffff;
+}
+
+.clearfix {
+    clear: both;
+}
+
+.right-float-element {
+    float: right;
+}
+
+/*Main body color*/
+body {
+    background-color: rgb(179, 121, 71);
+}
+
+/*Welcoming message styles (h1)*/
+#title-properties {
+    margin-bottom: 30px;
+    text-align: center;
+    font-size: 80px;
+    color: rgb(116, 63, 27);
+}
+
+/*Slideshow styles.*/
+.slideshow {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+
+.slides {
+    display: none;
+}
+
+.distance-from-upper-element {
+    margin-top: 30px;
+}
+
+/*Home page text styles.*/
+.text-properties {
+    font-size: 1.5em;
+    text-align: center;
+    color: rgb(116, 63, 27);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-family: 'linux_libertine_capitalsIt';
+    overflow: visible;
+}
+
+footer {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+}
+
+/*Font selection*/
+@font-face {
+    font-family: 'linux_libertine_capitalsIt';
+    src: url('https://localhost/css/linux_libertine_capitalsIt.woff') format('woff'),
+         url('https://localhost/css/linux_libertine_capitalsIt.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*Small devices*/
+@media (min-width: 576px) AND (max-width: 767px) {
+
+    /*Header styles*/
+    .menu-item {
+        display: none;
+    }
+
+    /*Main logo styles*/
+    #server-logo {
+        float: none;
+        text-align: center;
+    }
+
+   /*Icon bars styles*/ 
+    .bar-icon {
+        text-align: center;
+        margin-top: 10px;
+        color: rgb(116, 63, 27);
+        padding: 7px;
+    }
+
+    /*Main body styles*/
+    #title-properties {
+        font-size: 48px;
+    }
+
+    .text-properties {
+        font-size: 1.1em;
+    }
+}

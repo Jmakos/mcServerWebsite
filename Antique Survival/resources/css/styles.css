@@ -3,6 +3,10 @@
     margin: 0;
 }
 
+a {
+    text-decoration: none;
+}
+
 /*Header item*/
 header {
     margin-bottom: 30px;
@@ -10,6 +14,7 @@ header {
 
 #server-logo {
     float: left;
+    cursor: pointer;
 }
 
 .light-brown-orange {
@@ -26,25 +31,26 @@ header {
 .navigation-links {
     color: rgb(116, 63, 27);
     text-transform: uppercase;
-    font-size: 25px;
+    font-size: 0.8em;
     font-weight: bold;
     margin-right: 5px;
     margin-left: 40px;
 }
 
-/*Does not work at the momemnt.*/
-a.navigation-links:hover {
-    -moz-box-shadow: 30px,30px, 4px, #ffffff;
-    -webkit-box-shadow: 30px,30px, 4px, #ffffff;
-    box-shadow: 30px,30px, 4px, #ffffff;
+.bar-icon {
+    display: none;
+}
+
+.dropdown-content {
+    display: none;
+}
+
+.show {
+    display: block;
 }
 
 .clearfix {
     clear: both;
-}
-
-.right-float-element {
-    float: right;
 }
 
 /*Main body color*/
@@ -56,7 +62,7 @@ body {
 #title-properties {
     margin-bottom: 30px;
     text-align: center;
-    font-size: 80px;
+    font-size: 2em;
     color: rgb(116, 63, 27);
 }
 
@@ -83,52 +89,131 @@ body {
     padding-top: 10px;
     padding-bottom: 10px;
     font-family: 'linux_libertine_capitalsIt';
-    overflow: visible;
 }
 
+/*Footer styles*/
 footer {
-    position: absolute;
-    width: 100%;
-    bottom: 0;
+    margin-top: 60px;
+    vertical-align: bottom;
 }
 
 /*Font selection*/
-@font-face {
+/*@font-face {
     font-family: 'linux_libertine_capitalsIt';
     src: url('https://localhost/css/linux_libertine_capitalsIt.woff') format('woff'),
          url('https://localhost/css/linux_libertine_capitalsIt.woff') format('woff');
     font-weight: normal;
     font-style: normal;
+}*/
+
+/*Small device styles*/
+@media (max-width: 640px) {
+
+    /*Header styels for small devices*/
+    #server-logo {
+        float:none;
+        text-align: center;
+    }
+
+    .dropdown {
+        margin-top: 10px;
+        text-align: center;
+    }
+
+    .bar-icon {
+        display: block;
+        padding: 7px;
+        color: rgb(116, 63, 27);
+    }
+
+    .bar-icon:hover {
+        color: brown;
+        cursor: pointer;
+    }
+
+    .menu-item {
+        float: none;
+    }
+
+    .dropdown-content > div{
+        padding: 7px;
+        border-width: 4px;
+        border-style: solid;
+        text-align: center;
+        margin: 5px;
+    }
+
+    .navigation-links:hover {
+        color: brown;
+        font-size: 1.2em;
+        cursor: pointer;
+    }
+
+    /*Main body styles for small devices*/
+    #title-properties {
+        font-size: 2em;
+    }
 }
 
-/*Small devices*/
-@media (min-width: 576px) AND (max-width: 767px) {
-
-    /*Header styles*/
-    .menu-item {
-        display: none;
-    }
-
-    /*Main logo styles*/
+/*Medium device styles*/
+@media (min-width: 641px) and (max-width: 1007px) {
+    
+    /*Header styles for medium devices*/
     #server-logo {
+        text-align: center;
         float: none;
-        text-align: center;
     }
 
-   /*Icon bars styles*/ 
-    .bar-icon {
-        text-align: center;
-        margin-top: 10px;
-        color: rgb(116, 63, 27);
-        padding: 7px;
+    .dropdown-content {
+        display: block;
     }
 
-    /*Main body styles*/
+    .navigation-links {
+        float: none;
+    }
+
+    .navigation-links:hover {
+        color: brown;
+        cursor: pointer;
+    }
+
+    /*Main body styles for medium devices*/
     #title-properties {
-        font-size: 48px;
+        font-size: 3em;
+    }
+    
+    .text-properties {
+        font-size: 1.6em;
+    }
+}
+
+/*Large device styles*/
+@media (min-width: 1008px) {
+    /*Header styles for large devices*/
+    #server-logo {
+        text-align: center;
+        float: none;
+    }
+
+    .dropdown-content {
+        display: block;
+    }
+
+    .navigation-links {
+        padding: 15px;
+    }
+
+    .navigation-links:hover {
+        color: brown;
+        cursor: pointer;
+    }
+
+    /*Main body styles for large devices*/
+    #title-properties {
+        font-size: 4em;
     }
 
     .text-properties {
-        font-size: 1.1em;
+        font-size: 1.7em;
     }
 }

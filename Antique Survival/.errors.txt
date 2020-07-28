@@ -1,3 +1,7 @@
-1 - Δεν γίνεται σωστή αλλαγή του font.
-2 - Δεν εμφανίζεται το box-shadow στα links του μενού στο header.
-3 - Το footer καλύπτει το main κείμενο στην κύρια σελίδα.
+1 - Font does not change.
+2 - Navigation links do not go in the center of the screen (Medium devices). 
+
+Fixed 
+
+1 - Footer overrides main text.
+2 - Drop down does not work.

@@ -7,7 +7,7 @@
         <link rel="stylesheet" type="text/css" href="resources/css/styles.css">
         <link rel="stylesheet" type="text/css" href="resources/css/all.min.css">
         <meta name="author" content="Jmakos">
-        <title>Minecraft | Late night survival server</title>
+        <title>Minecraft | Antique-survival</title>
     </head>
 
     <body>
@@ -17,8 +17,33 @@
             <div class="light-brown-orange">
                 <!--This is the website's logo.-->
                 <div id="server-logo">
-                    <a href="#home"><img alt="server-logo" src="resources/imgs/logo/Antique Survival_logo.png" width="450px"></a>
+                    <a href="#home"><img alt="server-logo" src="resources/imgs/logo/Antique Survival_logo.png" width="70%"></a>
                 </div>
+
+                <!--Dropdown menu-->
+                <div class="dropdown">
+                    <div class="bar-icon"><i class="fas fa-bars fa-2x" onclick="dropDown()"></i></div>
+        
+                    <div class="dropdown-content" id="drop">
+                        <div class="menu-item">
+                            <a class="navigation-links" href="blog/index.php">Blog</a>
+                        </div>
+
+                        <div class="menu-item">
+                            <a class="navigation-links" href="forum/index.php" target="_blank">Forum</a>
+                        </div>
+
+                        <div class="menu-item">
+                            <a class="navigation-links" href="register/index.php">Sign-up</a>
+                        </div>
+
+                        <div class="menu-item">
+                            <a class="navigation-links" href="login/indexp.php">Sign-in</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!--<div class="bar-icon"><i class="fas fa-bars fa-2x"></i></div>
 
                 <div class="menu-item">
                     <a class="navigation-links light-sandyellow-onHover" href="blog/index.php">Blog</a>
@@ -35,10 +60,7 @@
                 <div class="menu-item right-float-element">
                     <a class="navigation-links" href="login/indexp.php">Sign-in</a>
                 </div>
-                
-                <div class="bar-icon">
-                    <i class="fas fa-bars fa-2x"></i> 
-                </div>
+                -->
 
                 <div class="clearfix"></div>
             </div>
@@ -46,7 +68,7 @@
 
         <!--Welcoming message-->
         <div class="light-brown-orange">
-            <h1 id="title-properties">Welcome to Antique Server!</h1>
+            <h1 id="title-properties">Welcome to Antique Surival!</h1>
         </div>
 
         <!--This is the slideshow of the home page.-->
@@ -94,5 +116,6 @@
         </footer>
 
         <script src="resources/js/slideshow.js"></script>
+        <script src="resources/js/dropdown.js"></script>
     </body>
 </html>

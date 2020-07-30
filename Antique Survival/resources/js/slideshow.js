@@ -3,7 +3,8 @@ displaySlides();
 
 function displaySlides() {
 
-    slides = document.getElementsByClassName("slides");
+    var slides = document.getElementsByClassName("slides");
+    var dots = document.getElementsByClassName("dot");
 
     for (var i = 0; i < slides.length; i++) {
         slides[i].style.display = "none";
@@ -13,7 +14,12 @@ function displaySlides() {
     if (slideIndex > slides.length) {
         slideIndex = 1;
     }
+
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
     
     slides[slideIndex-1].style.display = "block";
-    setTimeout(displaySlides, 3000);
+    dots[slideIndex-1].className += " active";
+    setTimeout(displaySlides, 1800);
 }

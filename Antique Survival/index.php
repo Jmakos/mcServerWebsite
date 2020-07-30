@@ -6,6 +6,7 @@
         <meta name="viewport" content="width=device-width,initial-scale=1.0">
         <link rel="stylesheet" type="text/css" href="resources/css/styles.css">
         <link rel="stylesheet" type="text/css" href="resources/css/all.min.css">
+        <link href="https://fonts.googleapis.com/css2?family=Cinzel&family=Dancing+Script&display=swap" rel="stylesheet"> 
         <meta name="author" content="Jmakos">
         <title>Minecraft | Antique-survival</title>
     </head>
@@ -74,23 +75,36 @@
         <!--This is the slideshow of the home page.-->
         <div class="slideshow">
             <div class="slides fade">
+                <div class="numbertext">1 / 5</div>
                 <img alt="screenshot1" src="resources/imgs/slideshow/1.png" style="width:100%;">
             </div>
 
             <div class="slides fade">
+                <div class="numbertext">2 / 5</div>
                 <img alt="screenshot2" src="resources/imgs/slideshow/2.png"style="width:100%;">
             </div>
 
             <div class="slides fade">
+                <div class="numbertext">3 / 5</div>
                 <img alt="screenshot3" src="resources/imgs/slideshow/3.png" style="width:100%;">
             </div>
             
             <div class="slides fade">
+                <div class="numbertext">4 / 5</div>
                 <img alt="screenshot4" src="resources/imgs/slideshow/4.png" style="width:100%;">
             </div>
 
             <div class="slides fade">
+                <div class="numbertext">5 / 5</div>
                 <img alt="screenshot5" src="resources/imgs/slideshow/5.png" style="width:100%;">
+            </div>
+
+            <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span>
+                <span class="dot" onclick="currentSlide(5)"></span>
             </div>
         </div>
 
@@ -100,8 +114,8 @@
 
             <p class="text-properties">
                 <br>Antique Survival is a minecraft server that takes place in a desert city of Antiqua.<br>
-                In the world of Antiqua, each player can <strong>build</strong> his/her base, <strong>fight</strong> hordes of aggressive monsters
-                or <strong>participate in a tournament</strong> of the local city arena.
+                In the world of Antiqua, each player can <strong>build</strong> his/her's base, <strong>fight</strong> hordes of aggressive monsters
+                or <strong>participate in a tournament</strong> in the local city's arena.
             </p>
                 
                 <p class="text-properties"><br><strong>The world of Antiqua is yours to explore!</strong></br></p>

@@ -1,7 +1,10 @@
-1 - Font does not change.
-2 - Navigation links do not go in the center of the screen (Medium devices). 
+Errors:
 
-Fixed 
+None at the moment!
+
+Fixed - Errors:
 
 1 - Footer overrides main text.
 2 - Drop down does not work.
+3 - Font does not change.
+4 - Navigation links do not go in the center of the screen (Medium and large devices). 

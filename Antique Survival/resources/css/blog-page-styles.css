@@ -1,0 +1,90 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+/*Header styles*/
+.light-brown-orange {
+    background-color: rgb(247, 168, 103);
+}
+
+#server-logo {
+    float: none;
+    text-align: center;
+}
+
+/*Main body styles*/
+body{
+    background-color: rgb(179, 121, 71);
+}
+
+#title-properties {
+    margin-top: 30px;
+    font-family: 'Cinzel', serif;
+    text-align: center;
+    font-size: 2.6em;
+    color: rgb(247, 168, 103);
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.flexbox-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-top: 65px;
+    margin-right: 20%;
+    margin-left: 20%;
+
+    border-style: double;
+    border-color: rgb(131, 82, 40);
+    border-width: 25px;
+}
+
+.blogposts-properties {
+    color: rgb(116, 63, 27);
+    padding: 70px;
+    font-size: 2em;
+    text-align: center;
+    font-family: 'Cinzel', serif;
+}
+
+.post-title-properties {
+    text-transform: uppercase;
+}
+
+/*Footer styles*/
+footer {
+    margin-top: 60px;
+    vertical-align: bottom;
+}
+
+#footer-properties {
+    font-size: 1.7em;
+    text-align: center;
+    color: rgb(116, 63, 27);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-family: 'Cinzel', serif;
+}
+
+/*Small devices*/
+@media (max-width: 640px) {
+
+    /*Header title for small devices*/
+    #title-properties {
+        font-size: 1.7em;
+    }
+
+    /*Main body styles for small devices*/
+    .blogposts-properties {
+        font-size: 1.3em;
+    }
+
+    /*Footer styles for small devices*/
+    #footer-properties {
+        font-size: 1.3em;
+    }
+}

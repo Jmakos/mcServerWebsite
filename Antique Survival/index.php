@@ -122,6 +122,11 @@
             
         </div>
 
+        <!--Illustration-->
+        <div class="distance-from-upper-element" id="fan-art-illustration">
+            <img alt="fan-art" src="resources/imgs/illustration/minecraft_fan_art.jpg" style="width:100%">
+        </div>
+
         <!--Footer of home page.-->
         <footer>
             <div class="light-brown-orange">
